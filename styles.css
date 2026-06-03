@@ -1,0 +1,232 @@
+/* === PENGATURAN DASAR === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff8e6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === BAGIAN HEADER === */
+header {
+    background: linear-gradient(135deg, #ff6b6b, #ffa726);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+button {
+    background-color: #ff3d00;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #dd2c00;
+}
+
+/* === MENU NAVIGASI === */
+nav {
+    background-color: #333;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* === BAGIAN UMUM / SECTION === */
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    color: #e65100;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #ff9800;
+    padding-bottom: 8px;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.1rem;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* === KARTU MENU === */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #ff5722;
+    margin: 12px 0;
+}
+
+.card p {
+    padding: 0 10px;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card span {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* === DAFTAR MENU === */
+.list-menu ul {
+    list-style: none;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.list-menu li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ff9800;
+    font-size: 1.1rem;
+}
+
+.list-menu li:last-child {
+    border-bottom: none;
+}
+
+/* === TABEL HARGA === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: #ff5722;
+    color: white;
+    padding: 14px;
+    font-size: 1.1rem;
+}
+
+table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+table tr:hover {
+    background-color: #fff3e0;
+}
+
+/* === KONTAK === */
+.kontak {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.kontak p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* === TAMPILAN DI HP (Responsif) === */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+    .card {
+        width: 90%;
+    }
+  }
